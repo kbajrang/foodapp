@@ -38,8 +38,11 @@ const HomeScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Food Calorie Estimator</Text>
+
       {image && <Image source={{ uri: image }} style={styles.image} />}
       <Button title="Take Photo" onPress={handlePickImage} />
+
       <TextInput
         style={styles.input}
         placeholder="Weight in grams"
@@ -47,8 +50,11 @@ const HomeScreen: React.FC = () => {
         value={weight}
         onChangeText={setWeight}
       />
+
       <Button title="Analyze" onPress={handleSubmit} disabled={loading} />
+
       {loading && <ActivityIndicator style={styles.loader} />}
+
       {result && (
         <View style={styles.result}>
           <Text>Food: {result.foodType}</Text>
@@ -63,14 +69,10 @@ const HomeScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 16 },
   image: { width: 200, height: 200, marginBottom: 16 },
-  input: {
-    width: '80%',
-    borderWidth: 1,
-    padding: 8,
-    marginVertical: 12,
-  },
+  input: { width: '80%', borderWidth: 1, padding: 8, marginVertical: 12 },
   loader: { marginVertical: 10 },
   result: { marginTop: 24, alignItems: 'center' },
+  title: { fontSize: 20, marginBottom: 16 },
 });
 
 export default HomeScreen;
