@@ -1,0 +1,7 @@
+[
+  { "food": "Idli", "caloriesPer100g": 140 },
+  { "food": "Paneer Butter Masala", "caloriesPer100g": 300 },
+  { "food": "Biryani", "caloriesPer100g": 150 },
+  { "food": "Samosa", "caloriesPer100g": 308 },
+  { "food": "Dosa", "caloriesPer100g": 165 }
+]
