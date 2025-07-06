@@ -8,6 +8,8 @@ Express.js REST API for food classification.
 cd backend-api
 npm install
 cp .env.example .env
+# create a folder for uploaded images
+mkdir uploads
 ```
 
 ## Development
